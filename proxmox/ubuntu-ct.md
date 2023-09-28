@@ -13,7 +13,7 @@ wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.i
 
 4. Create the container:
 ```bash
-qm create 9999 --memory 2048 --core 2 --name ubuntu-jammy --net0 virtio,bridge=vmbr0`.
+qm create 9999 --memory 2048 --core 2 --name ubuntu-jammy --net0 virtio,bridge=vmbr0
 ```
 (Be sure to adjust any of these values according to setup. Same goes for any of the other commands)
 
