@@ -4,7 +4,8 @@ Credits go to [u/chimera-zen on Reddit](https://www.reddit.com/r/Proxmox/comment
 
 1. Enter the BIOS on your machine.
 2. Enable VT-d/AMD-d (sometimes named Virtulization Technology)
-3. Edit `/etc/default/grub`: \
+3. Edit `/etc/default/grub`:
+
 Intel:
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"
@@ -22,3 +23,4 @@ vfio_pci
 vfio_virqfd
 ```
 6. Run `update-initramfs -u`
+7. Reboot Proxmox host
