@@ -24,7 +24,7 @@ qm importdisk 9999 jammy-server-cloudimg-amd64.img local-lvm
 
 6. Attach the new disk to the container as a scsi drive on the scsi controller:
 ```bash
-qm set 9999 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-999-disk-0
+qm set 9999 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-9999-disk-0
 ```
 
 7. Attach the CloudInit-drive:
