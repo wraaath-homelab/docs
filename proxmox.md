@@ -29,3 +29,5 @@ sudo ./svc.sh start
 ```
 
 [2fa fix](https://forum.proxmox.com/threads/problem-disabling-pve-6s-2fa.56623/)
+
+[Forward disks to TrueNAS VM (REMEMBER NO SATA CONTROLLER SUPPORT ON YOUR SERVER)](https://www.youtube.com/watch?v=M3pKprTdNqQ)
