@@ -11,7 +11,7 @@ pct set 114 -mp0 /mnt/pve/truenas-smb,mp=/mnt/truenas
 du -cha --max-depth=1 / | grep -E "M|G"
 ```
 
-[GPU passthru](https://www.reddit.com/r/Proxmox/comments/lcnn5w/proxmox_pcie_passthrough_in_2_minutes/) \
+[GPU passthru/IOMMU](https://www.reddit.com/r/Proxmox/comments/lcnn5w/proxmox_pcie_passthrough_in_2_minutes/) \
 [GPU in Ubuntu](https://manjaro.site/tips-to-create-ubuntu-20-04-vm-on-proxmox-with-gpu-passthrough/)
 
 ```bash
