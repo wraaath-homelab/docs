@@ -1,4 +1,4 @@
-# A guide for creating the perfect Ubuntu container template
+# A guide for creating the perfect Ubuntu VM template
 All credits go to [TechnoTim](https://techno-tim.github.io/posts/cloud-init-cloud-image/)
 
 On your Proxmox host:
@@ -11,7 +11,7 @@ On your Proxmox host:
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 ```
 
-4. Create the container:
+4. Create the VM:
 ```bash
 qm create 9999 --memory 2048 --core 2 --name ubuntu-jammy --net0 virtio,bridge=vmbr0
 ```
@@ -22,7 +22,7 @@ qm create 9999 --memory 2048 --core 2 --name ubuntu-jammy --net0 virtio,bridge=v
 qm importdisk 9999 jammy-server-cloudimg-amd64.img local-lvm
 ```
 
-6. Attach the new disk to the container as a scsi drive on the scsi controller:
+6. Attach the new disk to the VM as a scsi drive on the scsi controller:
 ```bash
 qm set 9999 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-9999-disk-0
 ```
@@ -42,4 +42,4 @@ qm set 9999 --boot c --bootdisk scsi0
 qm set 9999 --serial0 socket --vga serial0
 ```
 
-10. You're done! Now just clone the container in the WebUI. Optionally you can convert it to a template, although not needed.
+10. You're done! Now just clone the VM in the WebUI. Optionally you can convert it to a template, although not needed.
