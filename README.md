@@ -8,9 +8,9 @@ A work in progress.
 Head over to [wraaath-homelab/docker-services](https://github.com/wraaath-homelab/docker-services) and read the `service/README.md` for the documentation in my specifik docker services.
 
 ## 📚 Sections
-* [Git](https://github.com/wraaath-homelab/docs/tree/main/git)
-* [Proxmox](https://github.com/wraaath-homelab/docs/tree/main/proxmox)
-* [Ubuntu](https://github.com/wraaath-homelab/docs/tree/main/ubuntu)
+* [Git](git/)
+* [Proxmox](proxmox/)
+* [Ubuntu](ubuntu/)
 
 ## Problems?
 * Consult the official project's page.

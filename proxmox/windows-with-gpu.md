@@ -4,7 +4,8 @@ I will also be guiding you to adding a GPU to this VM.
 Stolen from [u/chimera-zen's post](https://www.reddit.com/r/Proxmox/comments/lcnn5w/proxmox_pcie_passthrough_in_2_minutes/) & [Proxmox's Wiki](https://pve.proxmox.com/wiki/Windows_10_guest_best_practices#Install)
 
 # Creating the VM (with the GPU)
-Before starting you should confirm IOMMU is working if you want GPU passthru. See [my guide](https://github.com/wraaath-homelab/docs/blob/main/proxmox/iommu.md) on that.
+> [!IMPORTANT]
+> Before starting you should confirm IOMMU is working if you want GPU passthru. See [my guide](https://github.com/wraaath-homelab/docs/blob/main/proxmox/iommu.md) on that.
 
 1. Press `Create VM`
 2. Under `OS`

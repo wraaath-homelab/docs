@@ -35,7 +35,8 @@ Go to `Datacenter` -> `Storage` -> `Add` -> `NFS`
 >> SMB usually worked for me, tho NFS works now.
 
 # Adding SMB/NFS share to LXC
-Go to `Shell`
+Go to `Shell` \
+: Shell is
 
 Use this command:
 ```bash
