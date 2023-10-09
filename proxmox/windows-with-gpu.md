@@ -1,6 +1,3 @@
-↖️ Table of contents \
-⭐ Be sure to star
-
 # Windows VM
 This guide will help you create a best-practice Windows VM in Proxmox. \
 I will also be guiding you to adding a GPU to this VM.
