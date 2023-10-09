@@ -11,4 +11,4 @@ Head over to [wraaath-homelab/docker-services](https://github.com/wraaath-homela
 
 * Consult the official project's page.
 
-* Submit a [PR](https://github.com/wraaath-homelab/docker-services/pulls) or an [Issue](https://github.com/wraaath-homelab/docker-services/issues) on the repo. And I'll try to help.
+* Submit a [PR](https://github.com/wraaath-homelab/docs/pulls) or an [Issue](https://github.com/wraaath-homelab/docs/issues) on the repo. And I'll try to help.
