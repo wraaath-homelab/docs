@@ -1,2 +1,0 @@
-# Template
-Hello :3
