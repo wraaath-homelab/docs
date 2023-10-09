@@ -101,22 +101,31 @@ Follow as normal until you reach storage
 
 
 ### Resizing disk
+> [!NOTE]
+> Made from the [Proxmox docs](https://pve.proxmox.com/wiki/Resize_disks#General_considerations)
+
 Resizing the disk of a Windows VM can be a little tricky. These are the steps that work for me.
 
-1. Click the "Hard Disk" of your VM. Typically `(scsi0)`
-2. `Disk Action` -> `Resize` -> choose the amount of GiB you want to add.
-3. Enter your Windows VM. Either from RDP or the Proxmox Console.
-4. Open CMD as admin.
-5. Shutdown your VM with this:
+1. Resize size of VM disk in Proxmox
+   * `Hardware` -> `Hard Disk` -> `Disk Action` -> `Resize`
+   * Choose amount of GiB to add.
+
+2. Shut down your Windows VM safely
+   * Open `Command Prompt` as administrator
+   * Run:
 ```ps
 shutdown -s -t 0
 ```
-([From Proxmox docs](https://pve.proxmox.com/wiki/Resize_disks#General_considerations))
 
-6. Start the VM as normal from the WebUI
-7. You should see the new free space.
-8. Choose "Extend Volume" on your disk.
-9. If "Extend Volume" is greyed out, you probably need to delete the recovery partition between them. Open a CMD as admin and do:
+3. Start the VM as normal from the WebUI
+
+4. Open `Disk Management`
+   * Right-click your `(C:)`-partition
+   * Select `Extend Volume...`
+
+5. If "Extend Volume" is greyed out, you probably need to delete the recovery partition between them. Open a CMD as admin and do:
+> [!IMPORTANT]
+> Make sure to pick the right disk and partition, the ones listed are examples.
 ```ps
 diskpart
 list disk
@@ -125,4 +134,5 @@ list partition
 select partiton 4
 delete partiton override
 ```
-10. Now the "Extend Volume" should be selectable.
+
+6. `Extend Volume...` should be selectable.
