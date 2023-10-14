@@ -11,6 +11,7 @@ Head over to [wraaath-homelab/docker-services](https://github.com/wraaath-homela
 * [Git](git/)
 * [Proxmox](proxmox/)
 * [Ubuntu](ubuntu/)
+* [ZFS](zfs/)
 
 ## Problems?
 * Consult the official project's page.

@@ -1,0 +1,10 @@
+version: '3.9' # version of docker
+services:
+  apache: # service name
+    image: httpd/alpine:3.18 # creator/image:version
+    restart: unless-stopped
+    container_name: website # name of container
+    ports: # define ports container can use
+    - '80:80' # host-port:container-port
+    volumes: # define volumes container can use
+    - ./src:/usr/local/apache2/htdocs # host-path:container-path
