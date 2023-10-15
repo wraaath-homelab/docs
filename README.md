@@ -8,7 +8,9 @@ A work in progress.
 Head over to [wraaath-homelab/docker-services](https://github.com/wraaath-homelab/docker-services) and read the `service/README.md` for the documentation in my specifik docker services.
 
 ## 📚 Sections
+* [Docker](docker/)
 * [Git](git/)
+* [Markdown](markdown/)
 * [Proxmox](proxmox/)
 * [Ubuntu](ubuntu/)
 * [ZFS](zfs/)
