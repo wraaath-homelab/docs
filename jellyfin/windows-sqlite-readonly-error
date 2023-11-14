@@ -1,0 +1,16 @@
+# Windows SQLite ReadOnly Error
+[Credit](https://www.reddit.com/r/jellyfin/comments/wmpcyu/readonly_sqlitepclprettysqliteexception_attempt/) \
+If you, like me, are using Jellyfin on Windows, and get the error `SQLite Error 8: 'attempt to write a readonly database'.` from the logs, then this should help you.
+
+1. Head over to the `Server`-folder.
+
+Go to the path `C:\ProgramData\Jellyfin\Server` in your File Explorer.
+
+2. Give your Windows user permissions on the `data`-folder.
+
+Right click "data" -> `Properties` -> `Security` -> Click on your user (eg. `wraaath DESKTOP-blahblah`) -> `Edit` -> Allow "Full control"
+
+3. Change database files
+
+Now Windows might say it couldn't give the permissions to a couple database files.
+If that is the case, just navigate over to the files and individually give them the same permissions as previously done. 
