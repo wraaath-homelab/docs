@@ -1,5 +1,4 @@
-↖️ Table of contents \
-⭐ Be sure to star
+⭐ Be sure to star!                                                                   Table of contents ↗️
 
 # 📖 Docs
 This is the documentation and guides for some of the things running in my homelab. \
