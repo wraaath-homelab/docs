@@ -25,7 +25,10 @@ Stolen from [u/chimera-zen's post](https://www.reddit.com/r/Proxmox/comments/lcn
    * `Discard:` Checked
 
 5. Under `CPU`
-   * `Type:` host
+   * `Type:` kvm64
+   > **Much** performance improvement compared to "host".
+
+   * `Enable NUMA:` Checked
 
 6. Under `Network`
    * `Model:` VirtIO (paravirtualized)
